@@ -22,7 +22,6 @@ export class CadastroComponent implements OnInit {
     if(cep !== '') {
       this.consultaCepService.getConsultaCep(cep).subscribe(resultado => 
         {
-          console.log(resultado);
           this.populandoEndereco(resultado, f);
         });
     }
